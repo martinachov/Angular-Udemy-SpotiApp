@@ -11,6 +11,8 @@ export class ArtistComponent implements OnInit {
 
   artista: any = {};
 
+  canciones: any[] = [];
+
 
   constructor( private activatedRoute: ActivatedRoute, public _spotifyService: SpotifyService) { }
 
@@ -29,6 +31,7 @@ export class ArtistComponent implements OnInit {
             this._spotifyService.getTop10(id)
               .subscribe(canciones => {
                 console.log(canciones);
+                this.canciones = canciones;
               });
           });
   }

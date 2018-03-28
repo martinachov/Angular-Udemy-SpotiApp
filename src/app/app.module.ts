@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule} from '@angular/common/http';
@@ -16,6 +17,7 @@ import { ArtistComponent } from './components/artist/artist.component';
 // Custom Pipes
 import { SinfotoPipe } from './pipes/sinfoto.pipe';
 import { ArtistaSinFotoPipe } from './pipes/artista-sin-foto.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 // Servicios
 import { SpotifyService } from './services/spotify.service';
@@ -31,7 +33,8 @@ import { SpotifyService } from './services/spotify.service';
     NavbarComponent,
     SinfotoPipe,
     ArtistaSinFotoPipe,
-    ArtistComponent
+    ArtistComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

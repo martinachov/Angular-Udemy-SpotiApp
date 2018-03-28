@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 export class SpotifyService {
 
   urlSpotify = 'https://api.spotify.com/v1/';
-  token = 'BQDU5QXCr-w3Bv9mDnHfF0LYGTHZxuWBfzO3qy5I6dFc_JV0IfACE3ISZ6253hzzX5uHyzYPcnMcDBhCqiw';
+  token = 'BQBW5AIJD5bpA3d-IozcAkE4a0H4dfhZLCeo1JsdKTN3Pr_wxkrs1vdBRMT7ItPW-Hyb0HhjkeQ8utN7Zbo';
   artistas: any[] = [];
   cancionesTop: any[] = [];
 

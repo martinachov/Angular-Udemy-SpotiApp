@@ -10,21 +10,15 @@ export class SearchComponent {
 
   termino = '';
 
-  constructor(public _spotifyService: SpotifyService) {
-
-  }
+  constructor(public _spotifyService: SpotifyService) {}
 
   buscarArtista() {
-
     console.log(this.termino);
-
     if (this.termino.length === 0) {
       return;
     }
-
     this._spotifyService.getArtistas(this.termino)
       .subscribe();
-
   }
 
 }
